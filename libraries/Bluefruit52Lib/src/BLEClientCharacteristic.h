@@ -107,7 +107,7 @@ class BLEClientCharacteristic
     void _assign(ble_gattc_char_t* gattc_chr);
     bool _discoverDescriptor(uint16_t conn_handle, ble_gattc_handle_range_t hdl_range);
 
-  private:
+  protected:
     ble_gattc_char_t  _chr;
     uint16_t          _cccd_handle;
 
