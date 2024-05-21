@@ -91,7 +91,7 @@ class BLEClientCharacteristic
     uint16_t write32_resp   (int      value);
 
     /*------------- Notify -------------*/
-    bool writeCCCD       (uint16_t value);
+    virtual bool writeCCCD  (uint16_t value);
 
     bool enableNotify    (void);
     bool disableNotify   (void);
